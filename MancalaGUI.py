@@ -2,6 +2,7 @@
 from Tkinter import *
 from MancalaBoard import *
 from Player import *
+from tyh968 import *
 
 class MancalaWindow:
     """# A very simple GUI for playing the game of Mancala."""
@@ -203,6 +204,6 @@ def startGame(p1, p2):
     root.mainloop()
 
 def test():
-	p1 = Player(1, Player.HUMAN)
-	p2 = Player(2, Player.HUMAN)
+	p2 = Player(2, Player.RANDOM)
+	p1 = tyh968(1, Player.MINIMAX, 1)
 	startGame(p1, p2)

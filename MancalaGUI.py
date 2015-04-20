@@ -204,6 +204,12 @@ def startGame(p1, p2):
     root.mainloop()
 
 def test():
-	p2 = Player(2, Player.RANDOM)
-	p1 = tyh968(1, Player.MINIMAX, 1)
+	p1 = tyh968(1, Player.MINIMAX, 5)
+	#p2 = Player(2, Player.RANDOM)
+	p2 = tyh968(2, Player.MINIMAX, 5)
+	startGame(p1, p2)
+
+def testAB():
+	p1 = tyh968(1, Player.CUSTOM, 5)
+	p2 = tyh968(2, Player.RANDOM, 5)
 	startGame(p1, p2)
